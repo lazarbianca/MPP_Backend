@@ -1,10 +1,20 @@
 const { Sequelize } = require("sequelize");
 const crypto = require("crypto");
 
-const sequelize = new Sequelize("MPP_PAINTINGS", "postgres", "0000", {
-  host: "localhost",
-  dialect: "postgres",
-});
+const sequelize = new Sequelize(
+  process.env.DB_NAME,
+  process.env.DB_USER,
+  process.env.DB_PASSWORD,
+  {
+    host: process.env.DB_HOST,
+    dialect: "postgres",
+  }
+);
+
+// const sequelize = new Sequelize("MPP_PAINTINGS", "postgres", "0000", {
+//   host: "localhost",
+//   dialect: "postgres",
+// });
 
 // const jwtSecret = crypto.randomBytes(64).toString("hex");
 const jwtSecret =
