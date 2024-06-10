@@ -1,7 +1,7 @@
-const { Sequelize, DataTypes } = require("sequelize");
-const db = require("../config/database");
+const { DataTypes } = require("sequelize");
+const { sequelize } = require("../config/database");
 
-const Artist = db.define(
+const Artist = sequelize.define(
   "Artist",
   {
     artistId: {

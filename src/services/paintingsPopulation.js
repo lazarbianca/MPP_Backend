@@ -28,7 +28,7 @@ async function populatePaintings() {
         year: 1937,
         movement: "Surrealism",
         imageUrl:
-          "https://static3.museoreinasofia.es/sites/default/files/obras/DE00050_0.jpg",
+          "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/PicassoGuernica.jpg/400px-PicassoGuernica.jpg",
         museum: "Museo Reina Sofia",
       },
       {

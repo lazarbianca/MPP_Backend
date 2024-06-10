@@ -1,7 +1,7 @@
-const { Sequelize, DataTypes } = require("sequelize");
-const db = require("../config/database");
+const { DataTypes } = require("sequelize");
+const { sequelize } = require("../config/database");
 
-const Painting = db.define(
+const Painting = sequelize.define(
   "Painting",
   {
     paintingId: {
