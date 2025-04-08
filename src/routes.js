@@ -34,7 +34,7 @@ router.post(
       });
       res.status(201).json({ message: "User registered", user });
     } catch (err) {
-      console.log(err.message);
+      console.log(err);
       res.status(500).json({ error: err.message });
     }
   }
